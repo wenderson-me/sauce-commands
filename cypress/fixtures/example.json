@@ -1,0 +1,76 @@
+{
+  "users": {
+    "standard": {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "description": "Standard user with full access"
+    },
+    "locked": {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "description": "User that has been locked out"
+    },
+    "problem": {
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "description": "User with problems (images, sorting)"
+    },
+    "performance": {
+      "username": "performance_glitch_user",
+      "password": "secret_sauce",
+      "description": "User with performance issues"
+    },
+    "error": {
+      "username": "error_user",
+      "password": "secret_sauce",
+      "description": "User that encounters errors"
+    },
+    "visual": {
+      "username": "visual_user",
+      "password": "secret_sauce",
+      "description": "User with visual changes"
+    }
+  },
+  "products": [
+    {
+      "name": "Sauce Labs Backpack",
+      "price": "$29.99",
+      "description": "carry.allTheThings() with the sleek, streamlined Sly Pack"
+    },
+    {
+      "name": "Sauce Labs Bike Light",
+      "price": "$9.99",
+      "description": "A red light isn't the desired state in testing"
+    },
+    {
+      "name": "Sauce Labs Bolt T-Shirt",
+      "price": "$15.99",
+      "description": "Get your testing superhero on with the Sauce Labs bolt T-shirt"
+    },
+    {
+      "name": "Sauce Labs Fleece Jacket",
+      "price": "$49.99",
+      "description": "It's not every day that you come across a midweight quarter-zip fleece jacket"
+    },
+    {
+      "name": "Sauce Labs Onesie",
+      "price": "$7.99",
+      "description": "Rib snap infant onesie for the junior automation engineer in development"
+    },
+    {
+      "name": "Test.allTheThings() T-Shirt (Red)",
+      "price": "$15.99",
+      "description": "This classic Sauce Labs t-shirt is perfect to wear"
+    }
+  ],
+  "customer": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "zipCode": "12345"
+  },
+  "invalidCustomer": {
+    "firstName": "",
+    "lastName": "",
+    "zipCode": ""
+  }
+}
