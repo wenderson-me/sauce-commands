@@ -4,8 +4,12 @@
   "description": "Complete Cypress testing package for Saucedemo.com with 41 E2E tests and 11 custom commands",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "test": "npm run test:clean && cypress run",
     "test:headed": "cypress run --headed",
+    "test:clean": "rm -rf cypress/reports && mkdir -p cypress/reports",
+    "test:report": "npm run test:clean && cypress run && npm run report:merge && npm run report:generate",
+    "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "report:generate": "marge cypress/reports/report.json -f report -o cypress/reports/html",
     "cypress:open": "cypress open",
     "cypress:verify": "cypress verify"
   },
@@ -33,7 +37,10 @@
   },
   "homepage": "https://github.com/wenderson-me/sauce-commands#readme",
   "devDependencies": {
-    "cypress": "^15.6.0"
+    "cypress": "^15.6.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.2"
   },
   "peerDependencies": {
     "cypress": ">=10.0.0"

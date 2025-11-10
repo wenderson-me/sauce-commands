@@ -8,7 +8,8 @@ pnpm-lock.yaml
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
-cypress/reports/
+cypress/reports/*.json
+cypress/reports/html/assets/
 
 test-results/
 coverage/
