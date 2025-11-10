@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauce Commands Test Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .status {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .status h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        .status ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+        .status li {
+            color: #666;
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .status li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+        .button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .button.secondary {
+            background: #6c757d;
+        }
+        .button.secondary:hover {
+            background: #5a6268;
+        }
+        .info {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="emoji">🧪</span>
+        <h1>Sauce Commands</h1>
+        <p>Complete Cypress testing package for Saucedemo.com</p>
+        
+        <div class="status">
+            <h3>📊 Test Suite Features</h3>
+            <ul>
+                <li>41 E2E tests covering all functionalities</li>
+                <li>11 custom reusable commands</li>
+                <li>Mochawesome HTML reports</li>
+                <li>Automated CI/CD with GitHub Actions</li>
+                <li>Support for screenshots and videos</li>
+            </ul>
+        </div>
+
+        <p><strong>Note:</strong> The HTML test report will be available here after the first successful CI/CD pipeline execution.</p>
+
+        <div>
+            <a href="https://github.com/wenderson-me/sauce-commands" class="button" target="_blank">
+                📦 View on GitHub
+            </a>
+            <a href="https://github.com/wenderson-me/sauce-commands/actions" class="button secondary" target="_blank">
+                🔄 CI/CD Status
+            </a>
+        </div>
+
+        <div class="info">
+            <p>After tests run successfully in GitHub Actions, the report.html file will be generated and published here automatically.</p>
+        </div>
+    </div>
+</body>
+</html>
