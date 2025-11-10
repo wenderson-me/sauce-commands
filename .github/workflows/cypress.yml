@@ -39,7 +39,7 @@ jobs:
         run: npm run test:clean
 
       - name: Run Cypress tests
-        run: cypress run
+        run: npx cypress run
         continue-on-error: true
 
       - name: Merge Mochawesome JSON reports
