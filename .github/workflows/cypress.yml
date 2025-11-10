@@ -32,15 +32,6 @@ jobs:
 
     - name: Run Cypress tests and generate report
       run: npm run test:report
-
-    - name: Merge test reports
-      if: always()
-      run: npm run report:merge
-      continue-on-error: true
-
-    - name: Generate HTML report
-      if: always()
-      run: npm run report:generate
       continue-on-error: true
 
     - name: Upload test report
