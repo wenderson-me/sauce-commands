@@ -1,0 +1,50 @@
+{
+  "name": "sauce-commands",
+  "version": "1.0.0",
+  "description": "Complete Cypress testing package for Saucedemo.com with 41 E2E tests and 11 custom commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "cypress:open": "cypress open",
+    "cypress:verify": "cypress verify"
+  },
+  "keywords": [
+    "cypress",
+    "testing",
+    "e2e",
+    "automation",
+    "qa",
+    "saucedemo",
+    "sauce-labs",
+    "e-commerce",
+    "commands",
+    "custom-commands"
+  ],
+  "author": "Wenderson Silva",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenderson-me/sauce-commands.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wenderson-me/sauce-commands/issues"
+  },
+  "homepage": "https://github.com/wenderson-me/sauce-commands#readme",
+  "devDependencies": {
+    "cypress": "^15.6.0"
+  },
+  "peerDependencies": {
+    "cypress": ">=10.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "cypress/",
+    "cypress.config.js",
+    "index.js",
+    "README.md"
+  ]
+}
