@@ -7,7 +7,7 @@
     "test": "npm run test:clean && cypress run",
     "test:headed": "cypress run --headed",
     "test:clean": "rm -rf cypress/reports && mkdir -p cypress/reports",
-    "test:report": "npm run test:clean && cypress run && npm run report:merge && npm run report:generate",
+    "test:report": "npm run test:clean && (cypress run || true) && npm run report:merge && npm run report:generate",
     "report:merge": "mochawesome-merge cypress/reports/mochawesome*.json > cypress/reports/report.json",
     "report:generate": "marge cypress/reports/report.json -f report -o cypress/reports/html",
     "cypress:open": "cypress open",
